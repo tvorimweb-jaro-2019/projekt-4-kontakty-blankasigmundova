@@ -8,3 +8,80 @@ body {
 }
 
 /* ---------------------------------------------------- */
+
+h1 {
+	margin: 20px;
+	text-align: center;
+}
+
+.celek {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin: 20px;
+}
+
+.jarmila, .klotylda, .lucie, .lucinda {
+	text-align: center;
+	padding: 20px;
+	margin: 15px;
+	border: 1px solid rgb(163, 163, 163);
+	border-radius: 8px;
+	box-shadow: rgb(101, 232, 255) 1px 1px 2px;
+}
+
+img {
+	border-radius: 50%;
+}
+
+@media (min-width: 540px) {
+
+	.jarmila, .klotylda, .lucie, .lucinda {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		width: calc( 100% / 2.2);
+		flex-grow: 1;
+		text-align: left; 
+		
+	}
+
+
+	img {
+		height: 80px;
+		margin: 10px;
+	}
+
+	h2 {
+		font-size: 16px;
+	}
+
+	p {
+		margin-left: 100px;
+		margin-top: -50px;
+	}
+
+}
+
+@media (min-width: 960px) {
+
+	.celek {
+		flex-wrap: nowrap;
+	}
+
+	.jarmila, .klotylda, .lucie, .lucinda {
+		flex-direction: column;
+		padding: 20px;
+		margin: 15px;
+		text-align: center;
+	}
+
+
+	p {
+		margin: 0px;
+	}
+
+	img {
+		height: 120px;
+	}
+}
